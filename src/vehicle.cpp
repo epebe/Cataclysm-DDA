@@ -4071,10 +4071,6 @@ units::power vehicle::total_power( map &here, const bool fueled, const bool safe
         }
     }
     pwr = std::max( 0_W, pwr );
-
-    if( count > 1 ) {
-        pwr = pwr * 4 / ( 4 + count - 1 );
-    }
     return pwr;
 }
 
